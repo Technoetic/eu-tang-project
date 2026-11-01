@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f3f0e7">
+    <meta name="theme-color" content="#10110e">
     <meta name="description" content="으-탱 프로젝트. 박이삭 세끼의 소개 영상과 DJ Juice의 Type A, Type B 비트를 만나보세요.">
     <meta name="app-build" content="{{BUILD_ID}}">
     <meta name="app-base" content="{{BASE_PATH}}">
@@ -15,7 +15,7 @@
   <body>
     <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-    <header class="site-header">
+    <header class="site-header site-header-immersive">
       <div class="header-inner container">
         <a class="brand" href="#home" data-nav aria-label="으-탱 프로젝트 처음으로">
           <svg class="brand-symbol" viewBox="0 0 40 40" aria-hidden="true"><path d="M4 5h32v7H11v5h21v7H11v5h25v7H4z" fill="currentColor"/><path d="M23 5h13v7H23z" fill="#d7f23e"/></svg>
@@ -34,38 +34,35 @@
     </header>
 
     <main id="main">
-      <section class="hero container" id="home" aria-labelledby="hero-title">
-        <div class="hero-grid">
-          <div class="hero-intro">
-            <p class="eyebrow"><span class="signal-dot"></span> THE EU-TANG PROJECT</p>
-            <h1 id="hero-title">으<span class="title-dash">-</span>탱<br>프로젝트<span class="title-period">.</span></h1>
-          </div>
-          <div class="hero-art" aria-label="으-탱 프로젝트를 위해 그린 DJ Juice 레코드 아트워크" role="img">
-            <div class="art-topline"><span>ORIGINAL BEATS</span><span>DJ JUICE ↗</span></div>
-            <div class="record-stage" aria-hidden="true">
-              <div class="record-sleeve">
-                <div class="sleeve-top"><span>EU—TANG</span><span>PROJECT</span></div>
-                <div class="sleeve-type">으<br><span>탱</span></div>
-                <div class="sleeve-bottom"><span>TYPE A<br>TYPE B</span><svg viewBox="0 0 60 60"><path d="M9 31h40M31 11l20 20-20 20"/></svg></div>
-              </div>
-              <div class="record-wrap">
-                <div class="record-disc">
-                  <div class="record-label"><span class="label-arc">THE EU-TANG PROJECT</span><strong>으–탱</strong><span class="label-artist">BEAT BY DJ JUICE</span><span class="spindle"></span><span class="label-tracks">TYPE A &amp; TYPE B</span></div>
-                </div>
-              </div>
-              <span class="art-cross art-cross-one">+</span><span class="art-cross art-cross-two">+</span>
-            </div>
-            <div class="art-bottomline"><span class="art-caption">먼저, 비트부터.</span><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span>PRESS PLAY</span></div>
-          </div>
+      <section class="hero hero-immersive" id="home" aria-labelledby="hero-title" data-hero-motion>
+        <div class="hero-scene" data-hero-scene aria-hidden="true">
+          <div class="hero-aura hero-aura-lime"></div>
+          <div class="hero-aura hero-aura-cool"></div>
+          <div class="hero-halftone"></div>
+          <div class="hero-orbit hero-orbit-wide"></div>
+          <div class="hero-orbit hero-orbit-tall"></div>
+          <div class="hero-orbit hero-orbit-fine"></div>
+          <div class="hero-light-line"></div>
+          <span class="hero-scene-cross hero-cross-one">+</span>
+          <span class="hero-scene-cross hero-cross-two">+</span>
+          <svg class="hero-star hero-star-one" viewBox="0 0 80 80"><path d="m40 0 5 32 28-18-22 25 29 7-32 2 10 27-18-23-18 23 10-27L0 46l29-7L7 14l28 18z"/></svg>
+          <svg class="hero-star hero-star-two" viewBox="0 0 80 80"><path d="m40 0 5 30 30-15-24 25 29 5-30 6 15 24-25-23-25 23 15-24L0 45l29-5L5 15l30 15z"/></svg>
+          <div class="hero-vinyl-rig"><div class="hero-vinyl-float"><img class="hero-vinyl-art" src="{{HERO_ART_URL}}" alt="" width="1254" height="1254" fetchpriority="high" decoding="async"></div></div>
+          <div class="hero-art-caption"><span class="hero-caption-rule"></span><span>DJ JUICE<br>TYPE A + TYPE B</span><svg viewBox="0 0 40 40"><path d="M5 35 35 5M5 5h30v30"/></svg></div>
+          <div class="hero-marquee"><div class="hero-marquee-track"><div class="hero-marquee-group"><span>EU—TANG</span><svg viewBox="0 0 70 70"><path d="M35 0v70M0 35h70M10 10l50 50M60 10 10 60"/></svg><span>EU—TANG</span><svg viewBox="0 0 70 70"><path d="M35 0v70M0 35h70M10 10l50 50M60 10 10 60"/></svg></div><div class="hero-marquee-group"><span>EU—TANG</span><svg viewBox="0 0 70 70"><path d="M35 0v70M0 35h70M10 10l50 50M60 10 10 60"/></svg><span>EU—TANG</span><svg viewBox="0 0 70 70"><path d="M35 0v70M0 35h70M10 10l50 50M60 10 10 60"/></svg></div></div></div>
+        </div>
+        <div class="hero-content container">
+          <div class="hero-kicker"><p class="eyebrow"><span class="hero-live-dot"></span> THE EU-TANG PROJECT</p><span class="hero-kicker-note">BEATS BY DJ JUICE</span></div>
+          <h1 class="hero-title" id="hero-title"><span class="hero-title-primary">으<span class="hero-title-dash">-</span>탱</span> <span class="hero-title-secondary">프로젝트<span class="title-period">.</span></span></h1>
           <div class="hero-copy">
             <p class="hero-quote">재미로 시작했습니다.<br>재미로 끝날 겁니다.</p>
             <div class="hero-actions">
-              <a class="button button-dark" href="#beats" data-nav>비트 들어보기 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-              <button class="button button-plain" type="button" data-open-video><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path class="icon-fill" d="m10 8 6 4-6 4z"/></svg> 소개 영상 보기</button>
+              <a class="button button-dark hero-listen" href="#beats" data-nav><span>비트 들어보기</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <button class="button button-plain hero-watch" type="button" data-open-video><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path class="icon-fill" d="m10 8 6 4-6 4z"/></svg> 소개 영상 보기</button>
             </div>
           </div>
         </div>
-        <div class="hero-footnote"><span>BEATS BY DJ JUICE · VIDEO BY 박이삭 세끼</span><a href="#about" data-nav>프로젝트 살펴보기 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M5 12l5 5 5-5"/></svg></a></div>
+        <div class="hero-footnote container"><span class="hero-credit">BEATS BY DJ JUICE<span class="hero-credit-separator">/</span>VIDEO BY 박이삭 세끼</span><a href="#about" data-nav><span>SCROLL TO DISCOVER</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M5 12l5 5 5-5"/></svg><span class="sr-only">프로젝트 살펴보기</span></a></div>
       </section>
 
       <section class="about section-pad" id="about" aria-labelledby="about-title">

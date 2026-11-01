@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "original stylized product artwork for immersive hero, not an actual artist or product photograph",
+  "transparent_background_requested": true,
+  "filename": "source-media/hero-vinyl-v2.png",
+  "width": 1254,
+  "height": 1254,
+  "bytes": 2478652,
+  "sha256": "88f41aaa4b2852ea8c66a44f244365986dd3664cc65894d02e5037ef8a460668",
+  "png_color_type": 6,
+  "prompt": "evidence/hero-v2-generation-prompt.txt"
+}

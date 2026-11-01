@@ -16,7 +16,7 @@ async function files(directory) {
 const allSource = await files(source); const hash = createHash('sha256');
 hash.update(`base:${basePath}\0`);
 for (const file of allSource) hash.update(path.relative(source, file).replaceAll('\\', '/')).update('\0').update(await readFile(file));
-const sourceMedia = [['type-a.mp3', 'type-a.mp3'], ['type-b.mp3', 'type-b.mp3'], ['video-poster.jpg', 'video-poster.jpg']];
+const sourceMedia = [['type-a.mp3', 'type-a.mp3'], ['type-b.mp3', 'type-b.mp3'], ['video-poster.jpg', 'video-poster.jpg'], ['hero-vinyl-v2.png', 'hero-vinyl-v2.png']];
 const media = {};
 await mkdir(path.join(output, 'media'), { recursive: true });
 for (const [file, label] of sourceMedia) {
@@ -31,13 +31,14 @@ for (const file of allSource.filter(file => file.startsWith(path.join(source, 'j
   const dest = path.join(assets, path.relative(path.join(source, 'js'), file));
   await mkdir(path.dirname(dest), { recursive: true }); await copyFile(file, dest);
 }
-const css = await Promise.all(['tokens.css', 'base.css', 'components.css'].map(name => readFile(path.join(source, 'styles', name), 'utf8')));
+const css = await Promise.all(['tokens.css', 'base.css', 'components.css', 'hero.css'].map(name => readFile(path.join(source, 'styles', name), 'utf8')));
 await writeFile(path.join(assets, 'styles.css'), css.join('\n'));
 await copyFile(path.join(source, 'static', 'favicon.svg'), path.join(assets, 'favicon.svg'));
 const tokens = {
   BUILD_ID: build, BASE_PATH: basePath, STYLE_URL: `${basePath}assets/${build}/styles.css`, APP_URL: `${basePath}assets/${build}/app.js`,
   POSTER_URL: media['video-poster.jpg'].url, FAVICON_URL: `${basePath}assets/${build}/favicon.svg`,
-  TYPE_A_URL: media['type-a.mp3'].url, TYPE_B_URL: media['type-b.mp3'].url
+  TYPE_A_URL: media['type-a.mp3'].url, TYPE_B_URL: media['type-b.mp3'].url,
+  HERO_ART_URL: media['hero-vinyl-v2.png'].url
 };
 const replace = input => input.replace(/\{\{([A-Z_]+)\}\}/g, (_all, name) => { if (!(name in tokens)) throw new Error('Unknown build token ' + name); return tokens[name]; });
 await writeFile(path.join(output, 'index.html'), replace(await readFile(path.join(source, 'index.html'), 'utf8')));
