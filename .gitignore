@@ -1,0 +1,6 @@
+dist/
+.artifacts/
+node_modules/
+*.tar.gz
+*.tgz
+.openai/local.json

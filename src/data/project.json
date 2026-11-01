@@ -1,0 +1,11 @@
+{
+  "name": "으-탱 프로젝트",
+  "author": "박이삭 세끼",
+  "video": "https://www.youtube.com/watch?v=3WUmK-k2OYM&t=6s",
+  "drive": "https://drive.google.com/drive/folders/1AchBWcekp0otNgUtezgbLMMKKqJWQh87",
+  "usageNotice": "상업적 목적의 사용 혹은 개인 용도의 사용은 금지합니다.",
+  "tracks": [
+    { "id": "type-a", "title": "Type A", "creator": "DJ Juice", "src": "{{TYPE_A_URL}}", "downloadName": "Beat by DJ Juice Type A.mp3" },
+    { "id": "type-b", "title": "Type B", "creator": "DJ Juice", "src": "{{TYPE_B_URL}}", "downloadName": "Beat by DJ Juice Type B.mp3" }
+  ]
+}

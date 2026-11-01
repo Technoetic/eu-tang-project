@@ -1,0 +1,17 @@
+:root {
+  --paper: #f3f0e7;
+  --paper-light: #faf8f1;
+  --ink: #1c1d19;
+  --ink-deep: #161713;
+  --muted: #696b62;
+  --line: #d1d0c5;
+  --acid: #d7f23e;
+  --dark-line: #42443a;
+  --dark-muted: #b8bbad;
+  --font-sans: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --gutter: clamp(22px, 4.5vw, 72px);
+  --content-width: 1320px;
+  --section-space: clamp(76px, 8vw, 128px);
+  --ease: cubic-bezier(.2, .65, .3, 1);
+}

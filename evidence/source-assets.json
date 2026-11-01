@@ -1,0 +1,88 @@
+{
+  "task_id": "eu-tang-source-assets-20261101",
+  "retrieved_at_utc": "2026-11-01T12:06:23.769088+00:00",
+  "source_folder_url": "https://drive.google.com/drive/folders/1AchBWcekp0otNgUtezgbLMMKKqJWQh87",
+  "source_video_url": "https://www.youtube.com/watch?v=3WUmK-k2OYM&t=6s",
+  "source_video_description_license_quote": "* 상업적 목적의 사용 혹은 개인 용도의 사용은 금지합니다.",
+  "license_quote_verification": "Root agent verified the exact quote in the source video description via Aside.",
+  "license_interpretation": "No free commercial or personal-use permission is inferred from public accessibility or successful download.",
+  "assets": [
+    {
+      "name": "Beat by DJ Juice Type A.mp3",
+      "source_id": "1ZZa_est_2EYayt17QGjHbrEfMnAtdP7G",
+      "url": "https://drive.usercontent.google.com/download?id=1ZZa_est_2EYayt17QGjHbrEfMnAtdP7G&export=download",
+      "path": "source-media/type-a.mp3",
+      "expected": "audio/mpeg",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "audio/mpeg",
+      "content_format": "MP3",
+      "bytes": 3441856,
+      "sha256": "fee3ebcb14e0ccfecd200c3547d36cdacbebd705f9214cf47ee04f4cc75488f4",
+      "header_hex": "49443302000000001f76545353000013",
+      "header_valid": true,
+      "mpeg_audio_info": {
+        "version": "MPEG-1",
+        "layer": "Layer III",
+        "sample_rate_hz": 48000,
+        "bitrate_kbps_first_frame": 320,
+        "channels": 2
+      },
+      "consecutive_mpeg_frames_valid": true,
+      "first_mpeg_frame_offset": 4096
+    },
+    {
+      "name": "Beat by DJ Juice Type B.mp3",
+      "source_id": "1BdwpBmHcKcE34VETqvd1gX0-e622JkJ9",
+      "url": "https://drive.usercontent.google.com/download?id=1BdwpBmHcKcE34VETqvd1gX0-e622JkJ9&export=download",
+      "path": "source-media/type-b.mp3",
+      "expected": "audio/mpeg",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "audio/mpeg",
+      "content_format": "MP3",
+      "bytes": 3419776,
+      "sha256": "351652e0e753eb7a0ee6e8325d5b76afeb1db9fd8125f85b034c97a9d1e82f03",
+      "header_hex": "49443302000000001f76545353000013",
+      "header_valid": true,
+      "mpeg_audio_info": {
+        "version": "MPEG-1",
+        "layer": "Layer III",
+        "sample_rate_hz": 48000,
+        "bitrate_kbps_first_frame": 320,
+        "channels": 2
+      },
+      "consecutive_mpeg_frames_valid": true,
+      "first_mpeg_frame_offset": 4096
+    },
+    {
+      "name": "3WUmK-k2OYM YouTube hqdefault poster",
+      "source_id": "3WUmK-k2OYM",
+      "url": "https://i.ytimg.com/vi/3WUmK-k2OYM/hqdefault.jpg",
+      "path": "source-media/video-poster.jpg",
+      "expected": "image/jpeg",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "content_format": "JPEG",
+      "bytes": 28659,
+      "sha256": "9c04ca62ba331202359262af67249cd44208a7cb42b9d12cdf93419b3a18e3c9",
+      "header_hex": "ffd8ffe000104a464946000101000001",
+      "header_valid": true,
+      "height_px": 360,
+      "width_px": 480
+    }
+  ],
+  "artifact_paths": [
+    "source-media/type-a.mp3",
+    "source-media/type-b.mp3",
+    "source-media/video-poster.jpg",
+    "evidence/source-assets.json"
+  ],
+  "verification_commands_and_results": "Python urllib public file transfers; MP3 ID3 offset plus two consecutive MPEG Layer III frame headers and JPEG SOI/EOI/SOF dimensions validated; SHA-256 and byte counts independently re-read from actual saved bytes. Exact Korean license quote verified after JSON UTF-8 write.",
+  "assumptions": [
+    "Public source URLs and original names were supplied by the root agent from user-provided sources."
+  ],
+  "unresolved": [],
+  "next_safe_action": "Review the source description restriction before selecting how to expose the source music on the homepage."
+}
